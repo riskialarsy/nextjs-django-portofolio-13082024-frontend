@@ -8,7 +8,7 @@ export default function Data() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8000/api/buku/')
+    fetch('http://riskiprana123.pythonanywhere.com/api/buku/')
       .then(response => response.json())
       .then(data => setData(data))
       .catch(error => console.error('Error:', error));
